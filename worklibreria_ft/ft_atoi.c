@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/09 19:40:39 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/09 20:19:23 by sansegur         ###   ########.fr       */
+/*   Created: 2023/02/13 15:52:01 by sansegur          #+#    #+#             */
+/*   Updated: 2023/02/13 16:03:26 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_atoi(char *str)
 {
-	long			res;
-	long			sign;
+	int				res;
+	int				sign;
 	unsigned int	i;
 
 	res = 0;
@@ -41,5 +41,19 @@ int	main(void)
 	printf("%i\n", ft_atoi("d 2htwuuq	"));
 	printf("%i\n", ft_atoi("125600"));
 	printf("%i\n", ft_atoi("-2147483648"));
+	return (0);
+}
+
+int	main(int ac, char **av)
+{
+	int nuestro;
+	int man;
+
+	if (ac == 2)
+	{
+		nuestro = ft_atoi(av[1]);
+		man = atoi(av[1]);
+		printf("nuestro: %d\n man: %d\n", nuestro, man);
+	}
 	return (0);
 }

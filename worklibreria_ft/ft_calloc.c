@@ -1,38 +1,57 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/16 17:06:56 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/13 16:50:27 by sansegur         ###   ########.fr       */
+/*   Created: 2023/02/13 12:33:01 by sansegur          #+#    #+#             */
+/*   Updated: 2023/02/14 15:18:35 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+void	*ft_calloc(size_t count, size_t size)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
+	size_t	i;
+	void	*ptr;
+
+	i = 0;
+	ptr = malloc(count * size)
+	if (!ptr)
+		return (NULL);
+	ft_memset(ptr, 0, i);
+	return (ptr);
 }
+
+
+
+
 /*
-int main(int argc, char **argv)
+void	*ft_calloc(size_t count, size_t size)
 {
-	if (ft_isdigit(argv[1][0]))
-		printf("Es un dígito: %c\n", argv[1][0]);
-	else
-		printf("NO es un dígito: %c\n", argv[1][0]);
+	size_t	i;
+	void	*ptr;
+
+	i = 0;
+	ptr = malloc(count * size);
+	if (!ptr)
+		return (NULL);
+	while (i < (count * size))
+	{
+		((char *)ptr)[i] = 0;
+		i++;
+	}
+	return (ptr);
+}
+
+int	main(void)
+{
+	char	*s;
+
+	s = ft_calloc(4, 4);
+	printf("%s\n", s);
 	return (0);
 }
 */
-int	main(void)
-{
-	printf("%d\n", ft_isdigit('i'));
-	printf("%d\n", ft_isdigit('7'));
-	return (0);
-}
-

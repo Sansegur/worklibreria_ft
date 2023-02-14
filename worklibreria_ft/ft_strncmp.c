@@ -6,7 +6,7 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/22 18:47:49 by sansegur          #+#    #+#             */
-/*   Updated: 2023/01/22 20:15:31 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/13 12:20:46 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	}
 	return (0);
 }
-/*
+
 int	main(void)
 {
 	printf("%d\n", strncmp("hola", "hola", '4'));
@@ -41,4 +41,4 @@ int	main(void)
 	printf("%d\n", ft_strncmp("h_", "hola", '4'));
 	return (0);
 }
-*/
+

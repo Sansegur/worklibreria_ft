@@ -1,38 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/16 17:06:56 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/13 16:50:27 by sansegur         ###   ########.fr       */
+/*   Created: 2023/02/14 15:20:31 by sansegur          #+#    #+#             */
+/*   Updated: 2023/02/14 16:06:36 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+char *ft_strdup(const char *s1)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
+	size_t	len;
+	char	*s2;
+
+	len = (ft_strlen(s1) + 1);
+	s2 = (char *)malloc(len);
+	if (!s2)
 		return (0);
-}
-/*
-int main(int argc, char **argv)
-{
-	if (ft_isdigit(argv[1][0]))
-		printf("Es un dígito: %c\n", argv[1][0]);
-	else
-		printf("NO es un dígito: %c\n", argv[1][0]);
-	return (0);
-}
-*/
-int	main(void)
-{
-	printf("%d\n", ft_isdigit('i'));
-	printf("%d\n", ft_isdigit('7'));
-	return (0);
+	ft_memcpy(s2, s1, len);
+	return (s2);
 }
 
+int main(void)
+{
+	char	*s;
+	
+	s = *ft_strdup('6');
+	printf("%p\n", s);
+	return (0);
+}

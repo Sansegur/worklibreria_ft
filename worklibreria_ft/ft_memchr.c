@@ -6,7 +6,7 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 11:34:49 by sansegur          #+#    #+#             */
-/*   Updated: 2023/01/31 15:27:54 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/13 15:34:36 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 void	*ft_memchr(const void *str, int c, size_t n)
 {
 	unsigned char	*s;
-	size_t	i;
-	
+	size_t			i;
+
 	s = (unsigned char *)str;
 	i = 0;
 	while (i < n)

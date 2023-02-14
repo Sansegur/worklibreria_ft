@@ -6,7 +6,7 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 20:23:14 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/02 16:52:54 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/13 15:33:07 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_isprint(int c)
 int	main(int argc, char **argv)
 {
 	if (ft_isprint(argv[1][0]))
-		printf("Es printeable: %c\n", argv[1][0]);
-		printf("No es printeable: %c\n", argv[1][0]);
-		return (0);
+	printf("Es printeable: %c\n", argv[1][0]);
+	printf("No es printeable: %c\n", argv[1][0]);
+	return (0);
 }

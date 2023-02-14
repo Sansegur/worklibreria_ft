@@ -6,7 +6,7 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 11:05:11 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/07 18:22:25 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/13 13:58:38 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <stdio.h>
 # include <string.h>
+# include <stdlib.h>
+# include <unistd.h>
 
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
@@ -33,5 +35,7 @@ void		ft_bzero(void *s, size_t n);
 void		*ft_memcpy(void *dst, const void *src, size_t n);
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
+void		*ft_calloc(size_t count, size_t size);
+
 
 #endif
