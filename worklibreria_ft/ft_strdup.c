@@ -25,11 +25,16 @@ char *ft_strdup(const char *s1)
 	return (s2);
 }
 
-int main(void)
+int main(int ac, char **av)
 {
-	char	*s;
-	
-	s = *ft_strdup('6');
-	printf("%p\n", s);
-	return (0);
+    char *ft;
+    char *or;
+
+    if (ac == 2)
+    {
+        ft = ft_strdup(av[1]);
+        or = strdup(av[1]);
+        printf("%s\n%s\n", ft, or);
+    }
+    return (0);
 }
