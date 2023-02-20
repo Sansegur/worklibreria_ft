@@ -6,7 +6,7 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 11:05:11 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/18 13:38:09 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/20 16:42:16 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,6 @@ void		ft_memmove(void *dst, const void *src, size_t len);
 char		*ft_strdup(const char *s1);
 size_t		ft_strlcat(char *dst, const char *src, size_t size);
 char		*ft_strnstr(const char *s, const char *to_find, size_t n);
+char		*ft_strjoin(const char *s1, const char *s2);
 
 #endif

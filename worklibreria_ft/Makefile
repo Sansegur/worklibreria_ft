@@ -6,7 +6,7 @@
 #    By: sansegur <sansegur@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/12 20:08:02 by sansegur          #+#    #+#              #
-#    Updated: 2023/02/18 13:23:27 by sansegur         ###   ########.fr        #
+#    Updated: 2023/02/20 16:43:32 by sansegur         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,9 @@ SRCS	=	ft_isalpha.c \
 		ft_memmove.c \
 		ft_strdup.c \
 		ft_strlcat.c \
-		ft_strnstr.c \	
+		ft_strnstr.c \
+		ft_substr.c \
+		ft_strjoin.c	
 OBJS	=	$(SRCS:.c=.o)
 INCDIR	=	-I ./
 RM	=	rm -f
