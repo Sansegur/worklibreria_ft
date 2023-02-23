@@ -6,7 +6,7 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 17:34:39 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/02 16:42:45 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/21 18:24:50 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,11 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-/*
+
 int main(void)
 {
 	printf("%d\n", ft_isascii('r'));
 	printf("%d\n", ft_isascii('9'));
-	printf("%d\n", ft_isascii(''));
+	printf("%d\n", ft_isascii(' '));
 	return (0);
 }
-*/

@@ -6,7 +6,7 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/18 12:18:43 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/18 17:33:43 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/21 16:28:37 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*new_s;
-	size_t	i;
+	char			*new_s;
+	unsigned int	i;
 
 	new_s = (char *)malloc(sizeof(char) * len + 1);
 	i = 0;

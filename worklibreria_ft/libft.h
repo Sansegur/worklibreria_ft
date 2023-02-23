@@ -6,7 +6,7 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 11:05:11 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/20 16:42:16 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/23 19:11:16 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize);
 void		*ft_calloc(size_t count, size_t size);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 int			ft_atoi(char *str);
-void		ft_memmove(void *dst, const void *src, size_t len);
+void		*ft_memmove(void *dst, const void *src, size_t len);
 char		*ft_strdup(const char *s1);
 size_t		ft_strlcat(char *dst, const char *src, size_t size);
 char		*ft_strnstr(const char *s, const char *to_find, size_t n);
