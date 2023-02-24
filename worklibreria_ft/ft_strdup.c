@@ -6,7 +6,7 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/14 15:20:31 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/18 12:14:45 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/24 19:07:48 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ char *ft_strdup(const char *s1)
 
 	len = (ft_strlen(s1) + 1);
 	s2 = (char *)malloc(len);
-	if (!s2)
-		return (0);
+	if (s2 == NULL)
+		return (NULL);
 	ft_memcpy(s2, s1, len);
 	return (s2);
 }
@@ -35,4 +35,4 @@ int main(int ac, char **av)
 		or = strdup(av[1]);
 		printf("%s\n%s\n", ft, or);
 		return (0);
-}
+}  

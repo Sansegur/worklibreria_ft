@@ -6,7 +6,7 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 11:05:11 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/23 19:11:16 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/24 13:23:16 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void		ft_bzero(void *s, size_t n);
 void		*ft_memcpy(void *dst, const void *src, size_t n);
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize);
-void		*ft_calloc(size_t count, size_t size);
+void		*ft_calloc(size_t nobj, size_t size);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 int			ft_atoi(char *str);
 void		*ft_memmove(void *dst, const void *src, size_t len);

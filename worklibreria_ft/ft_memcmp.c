@@ -6,10 +6,9 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 19:30:55 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/13 15:47:20 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/24 12:07:53 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 //1.size_t guarda el valor de la memoria a comparar
 //2.compara 2 strings
 //3.devuelve 0, si las dos son idénticas
@@ -19,8 +18,9 @@
 //la diferencia entre las funciones str y mem: mem no tiene
 //en cuenta el NULL, str tiene en cuenta el NULL
 //un char se corresponde con la medida más pequeña bytes.
+
 #include "libft.h"
-/*
+
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;
@@ -39,8 +39,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-*/
-
+/*
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;
@@ -57,9 +56,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int	main(void)
 
+int	main(void)
 {
 	printf("%d\n", ft_memcmp("mandarina", "manzana", 5));
 	printf("%d\n", memcmp("mandarina", "manzana", 5));

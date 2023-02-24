@@ -6,7 +6,7 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/07 16:38:29 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/07 19:27:09 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/24 10:43:43 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,8 @@ size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
 			i++;
 		}
 		dst[i] = '\0';
-
 	}
-	return (src_len);
+	return (len);
 }
 
 /*	if (src[len] != '\0')

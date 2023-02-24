@@ -6,7 +6,7 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 13:59:28 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/21 18:29:56 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/24 13:49:34 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_bzero(void *s, size_t n)
 	while (n--)
 		*tmp++ = '0';
 }
-
+/*
 int	main(void)
 {
 	unsigned char	str[] = "NO ME FUNCIONABA EL MAIN";
@@ -33,4 +33,4 @@ int	main(void)
 	printf("%s\n", str);
 	return (0);		
 }
-
+*/

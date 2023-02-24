@@ -4,12 +4,6 @@
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/09 18:49:22 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/09 18:51:18 by sansegur         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 // 1. ft_strlcat() es una función para concatenar dos cadenas.
 // 2. Toma tres parámetros: cadena dst, cadena src y tamaño de la cadena dest.
 // 3. Agrega la cadena src a la cadena dst.
@@ -42,18 +36,19 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[i + j] = '\0';
 	return (i + ft_strlen(src));
 }
-/*
+
 int	main(void)
 {
-	char	dst[20] = "tinc soneta";
-	char	src[20] = "estic cansadeta";
+	char	dst[20] = "333";
+	char	src[20] = "4444";
 
-	printf("%zu\n", ft_strlcat(dst, src, 3));
+	printf("%zu\n", ft_strlcat(dst, src, 8));
 	printf("%s\n", dst);
-	printf("%zu\n", ft_strlcat(dst, src, 5));
+	printf("%zu\n", ft_strlcat(dst, src, 4));
 	printf("%s\n", dst);
-	printf("%zu\n", ft_strlcat(dst, src, 11));
+	printf("%zu\n", ft_strlcat(dst, src, 1));
 	printf("%s\n", dst);
 	return (0);
 }
-*/
+
+

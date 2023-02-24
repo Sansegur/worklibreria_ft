@@ -6,9 +6,13 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 15:52:01 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/13 16:03:26 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/24 18:35:39 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+//convierte una cadena a su valor numérico (enteros)
+//1. saltar los espacios vacios. 
+//2. el signo -/+, nos lo iguala a negativo.
+//3. hacemos el cálculo ej.:resultado * 10 = 100 a este les sumamos STR[i] - 0 y nos da //109, el segundo 0 era 'the place holder de src[i] - 0
 
 #include "libft.h"
 
@@ -44,6 +48,7 @@ int	main(void)
 	return (0);
 }
 
+/*
 int	main(int ac, char **av)
 {
 	int nuestro;
@@ -57,3 +62,4 @@ int	main(int ac, char **av)
 	}
 	return (0);
 }
+*/

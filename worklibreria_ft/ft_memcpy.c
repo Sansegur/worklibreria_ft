@@ -6,7 +6,7 @@
 /*   By: sansegur <sansegur@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/23 17:08:46 by sansegur          #+#    #+#             */
-/*   Updated: 2023/02/21 18:52:10 by sansegur         ###   ########.fr       */
+/*   Updated: 2023/02/24 18:46:46 by sansegur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
+/*
 int	main(void)
 {
 	char	dst[10] = "caracola";
@@ -45,4 +45,13 @@ int	main(void)
   	printf("%s\n", memcpy(dst, "hola", 4));
 	return (0);
 }
+*/
+/*
+int	main(void)
+{
+	char	dst[10] = "adios";
 
+	printf("%s\n", ft_memcpy(dst, "hola", 5));
+	return (0);
+}
+*/
